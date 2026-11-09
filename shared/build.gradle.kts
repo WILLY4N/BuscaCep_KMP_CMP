@@ -35,6 +35,11 @@ kotlin {
             implementation(libs.compose.uiTooling)
             implementation(libs.ktor.client.okhttp)
         }
+        jvmMain{
+            dependencies {
+                implementation(libs.ktor.client.okhttp)
+            }
+        }
         commonMain.dependencies {
             implementation(libs.compose.runtime)
             implementation(libs.compose.foundation)
