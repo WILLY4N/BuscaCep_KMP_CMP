@@ -5,12 +5,12 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class EnderecoResponse(
-    val cep: String? = null,
-    val logradouro: String? = null,
-    val bairro: String? = null,
-    val localidade: String? = null,
-    val uf: String? = null,
-    val erro: String? = null
+    val cep: String? = "",
+    val logradouro: String? = "",
+    val bairro: String? = "",
+    val localidade: String? = "",
+    val uf: String? = "",
+    val erro: String? = ""
 ) {
     fun toDomain(): Endereco {
         return Endereco(
